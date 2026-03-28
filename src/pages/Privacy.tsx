@@ -107,7 +107,7 @@ const Privacy = () => {
             <ul>
               <li>Email: gkenterprise900@gmail.com</li>
               <li>Phone: +91 92743-12554</li>
-              <li>Address: 346-3rd floor,AR mall near Sudama Chowk <br /> Mota varachha, Surat
+              <li>Address: 346-3rd floor,AR mall near Sudama Chowk <br /> Mota varachha, Surat  394101
                   </li>
             </ul>
 

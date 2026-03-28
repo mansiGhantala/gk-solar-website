@@ -94,7 +94,7 @@ const Terms = () => {
               <li>Phone: +91 92743-12554</li>
               <li>Address:                  
                  {/* <span className="text-primary-foreground/80"> */}
-                  346-3rd floor, AR Mall Near Sudama Chowk <br /> Mota varachha, Surat 395006
+                  346-3rd floor, AR Mall Near Sudama Chowk <br /> Mota varachha, Surat  394101
                   {/* </span> */}
                   </li>
             </ul>

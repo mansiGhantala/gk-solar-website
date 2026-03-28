@@ -43,6 +43,8 @@ import solar12 from "@/assets/gallery/solar-installation-12.webp";
 import solar13 from "@/assets/gallery/solar-installation-13.webp";
 import solar14 from "@/assets/gallery/solar-installation-14.webp";
 import solar15 from "@/assets/gallery/solar-installation-15.webp";
+import solar16 from "@/assets/gallery/solar-installation-16.webp";
+import solar17 from "@/assets/gallery/solar-installation-17.webp";
 const Gallery = () => {
   const [filter, setFilter] = useState("all");
 
@@ -75,8 +77,12 @@ const galleryItems = [
   { image: solar13, category: "installations", title: "Large-Scale Solar Energy Farm" },
   { image: solar3, category: "installations", title: "Foundation Construction" },
   { image: solar4, category: "installations", title: "Foundation pile" },
+  { image: solar17, category: "installations", title: "Rooftop Solar Maintenance Work" },
+
   { image: agri_land14, category: "installations", title: "Rooftop Solar Maintenance Work" },
-  { image: solar5, category: "installations", title: "Support Post Installation" },
+  { image: solar16, category: "installations", title: "Rooftop Solar Maintenance Work" },
+
+  // { image: solar5, category: "installations", title: "Support Post Installation" },
   { image: solar11, category: "installations", title: "Solar module wiring installation" },
  { image: solar6, category: "installations", title: "Rooftop Solar Panel Array" },
   { image: solar7, category: "installations", title: "Ground-Mounted Solar PV Structure Setup" },

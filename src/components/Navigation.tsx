@@ -1,7 +1,7 @@
 import { useState } from "react";
 import gklogo from "../assets/gklogo.png"
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, ChevronDown, Mail, Phone } from "lucide-react";
+import { Menu, X, ChevronDown,Instagram, Mail, Phone, Facebook } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   NavigationMenu,
@@ -23,25 +23,59 @@ const Navigation = () => {
 
   return (
     <>
-      {/* Top Bar */}
-      <div className="bg-primary text-primary-foreground py-2 px-4">
-        <div className="container mx-auto flex justify-between items-center text-sm">
-          <div className="flex items-center">
-            <a href="mailto:gkenterprise900@gmail.com" className="flex items-center gap-2 hover:text-secondary transition-smooth">
-              <Mail className="h-4 w-4" />
-              <span className="hidden md:inline">gkenterprise900@gmail.com </span>
-            </a>
-            <a href="tel:+1234567890" className="flex items-center gap-2 hover:text-secondary transition-smooth">
-              <Phone className="h-4 w-4" />
-              <span className="hidden md:inline">+91 92743-12554</span>
-            </a>
-          </div>
-          {/* <div className="flex gap-4">
-            <a href="#" className="hover:text-secondary transition-smooth">Facebook</a>
-            <a href="#" className="hover:text-secondary transition-smooth">LinkedIn</a>
-          </div> */}
-        </div>
-      </div>
+     <div className="bg-primary text-primary-foreground py-2 px-4 border-b border-white/10">
+  <div className="container mx-auto flex justify-center items-center text-sm">
+
+    <div className="flex items-center gap-6 flex-wrap justify-center">
+
+      {/* Email */}
+      <a
+        href="mailto:gkenterprise900@gmail.com"
+        className="flex items-center gap-2 hover:text-secondary transition-all duration-200"
+      >
+        <Mail className="h-4 w-4" />
+        <span className="hidden md:inline">gkenterprise900@gmail.com</span>
+      </a>
+
+      {/* Divider */}
+      <div className="h-4 w-px bg-white/20 hidden md:block" />
+
+      {/* Phone */}
+      <a
+        href="tel:+919274312554"
+        className="flex items-center gap-2 hover:text-secondary transition-all duration-200"
+      >
+        <Phone className="h-4 w-4" />
+        <span className="hidden md:inline">+91 92743-12554</span>
+      </a>
+
+      {/* Divider */}
+      <div className="h-4 w-px bg-white/20 hidden md:block" />
+
+      {/* Instagram */}
+      <a
+        href="https://www.instagram.com/gkenterprise.solar"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex items-center gap-2 hover:text-secondary transition-all duration-200"
+      >
+        <Instagram className="h-5 w-5" />
+        <span className="hidden md:inline">Instagram</span>
+      </a>
+
+      {/* Facebook */}
+      <a
+        href="#"
+        className="flex items-center gap-2 hover:text-secondary transition-all duration-200"
+      >
+        <Facebook className="h-5 w-5" />
+        <span className="hidden md:inline">Facebook</span>
+      </a>
+
+    </div>
+
+  </div>
+</div>
 
       {/* Main Navigation */}
       <nav className="bg-card shadow-soft sticky top-0 z-50">

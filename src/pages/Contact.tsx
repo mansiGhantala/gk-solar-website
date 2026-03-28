@@ -17,28 +17,51 @@ const Contact = () => {
     service: "",
     message: ""
   });
+const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    try {
-      const response = await fetch("https://formspree.io/f/mnnozbal", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify(formData)
-      });
-
-      if (response.ok) {
-        toast.success("✅ Message sent successfully!");
-        setFormData({ name: "", email: "", phone: "", message: "", service: "" });
-      } else {
-        toast.error("❌ Something went wrong, please try again.");
-      }
-    } catch (error) {
-      toast.error("⚠️ Network error. Please try again later.");
+    // ✅ Basic validation
+    if (!formData.name || !formData.phone || !formData.message || !formData.service) {
+      toast.error("⚠️ Please fill all required fields");
+      return;
     }
+
+    setLoading(true);
+
+    // ✅ Create WhatsApp message
+    const message = `Hello GK Enterprise,
+
+I want inquiry:
+
+👤 Name: ${formData.name}
+📞 Phone: ${formData.phone}
+📧 Email: ${formData.email}
+⚡ Service: ${formData.service}
+
+📝 Message:
+${formData.message}`;
+
+    const whatsappURL = `https://wa.me/919274312554?text=${encodeURIComponent(message)}`;
+
+    // ✅ Show success
+    toast.success("✅ Redirecting to WhatsApp...");
+
+    // ✅ Open WhatsApp after slight delay
+    setTimeout(() => {
+      window.open(whatsappURL, "_blank");
+      setLoading(false);
+
+      // Reset form
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        service: "",
+        message: ""
+      });
+    }, 800);
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
