@@ -65,8 +65,7 @@ const Navigation = () => {
 
       {/* Facebook */}
       <a
-        href="#"
-        className="flex items-center gap-2 hover:text-secondary transition-all duration-200"
+        href="https://www.facebook.com/Gkenterprise-Solar" target="_blank" rel="noopener noreferrer"       className="flex items-center gap-2 hover:text-secondary transition-all duration-200"
       >
         <Facebook className="h-5 w-5" />
         <span className="hidden md:inline">Facebook</span>
@@ -82,11 +81,6 @@ const Navigation = () => {
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center h-20 d-flex" >
             {/* Logo */}
-            {/* <Link to="/" className="text-2xl font-bold text-primary" style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-              <img src={gklogo} className="logo" alt="gklogo" style={{ width: "50px", paddingRight: "5px" }} />
-              <span className="text-primary">GK</span>
-              <span className="text-secondary">Enterprise</span>
-            </Link> */}
             <Link to="/" className="text-2xl font-bold text-primary flex justify-center items-center" >
                             <img src={gklogo} className="logo" alt="gklogo" style={{ width: "50px", paddingRight: "5px" }} />
              {/* Hidden on mobile */}
