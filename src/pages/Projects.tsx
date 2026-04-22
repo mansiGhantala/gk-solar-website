@@ -12,81 +12,126 @@ import agri_land6 from "@/assets/agri_land6.jpg";
 const Projects = () => {
   const [filter, setFilter] = useState("all");
 
-  const projects = [
-     {
-    title: "M/S Gagan Silk Mills Pvt. Ltd",
-    category: "ground-mounted",
-    capacity: "2.4 MW",
-    location: "Asnad, Olpad",
-    date: "December 2025",
-    description: "Ground-mounted system positioned at ideal tilt to maximize sunlight exposure.",
-    image: agri_land6
-  },
+const projects = [
   {
-    title: "Vishwaprem Dyeing & Printing Mills Pvt",
+    title: "Asha Chiragkumar Gorasiya",
     category: "ground-mounted",
-    capacity: "1.5 MW",
-    location: "Asnad, Olpad",
-    date: "December 2025",
-    description: "Solar panels mounted on fixed or tracking ground systems.",
+    capacity: "1.25 MW",
+    location: "Timana",
+    date: "January 2025",
+    description: "Ground-mounted solar installation for efficient energy generation.",
     image: agri_land3
   },
   {
-    title: "PNR Industries Ltd",
+    title: "Kakadium LLP",
     category: "ground-mounted",
     capacity: "3.5 MW",
-    location: "Kukarmunda, Tapi",
-    date: "August 2025",
-    description: "Lower cost per kW for large installations using centralized inverters.",
-    image: agri_land3
-  },
-  {
-    title: "Arham Synthetics",
-    category: "ground-mounted",
-    capacity: "430 kW",
-    location: "Asnad, Olpad",
-    date: "August 2025",
-    description: "High-efficiency PV modules connected in optimized strings.",
-    image: agri_land3
-  },
-  {
-    title: "M/S Shree Kalpatru Textiles",
-    category: "ground-mounted",
-    capacity: "1 MW",
-    location: "Asnad, Olpad",
+    location: "Tana",
     date: "December 2025",
-    description: "Large warehouse ground-mounted system reducing dependency on grid power.",
+    description: "Large-scale solar project with optimized land utilization.",
     image: agri_land3
   },
   {
-    title: "Shree Mahavir Roll Tech Ltd",
+    title: "Urvashi Hardik Gorasiya",
     category: "ground-mounted",
-    capacity: "2.6 MW",
-    location: "Asnad, Olpad",
-    date: "December 2025",
-    description: "Uses bifacial panels capturing sunlight on both sides for higher yield.",
+    capacity: "1.25 MW",
+    location: "Timana",
+    date: "January 2025",
+    description: "Efficient ground-mounted solar system for consistent output.",
     image: agri_land3
   },
   {
-    title: "Yash Jari Industries",
+    title: "Shree Bahucharaji Tex",
+    category: "ground-mounted",
+    capacity: "0.3 MW",
+    location: "Jhagadiya",
+    date: "December 2025",
+    description: "Compact solar installation for industrial use.",
+    image: agri_land3
+  },
+  {
+    title: "Rijiya Enterprise",
+    category: "ground-mounted",
+    capacity: "0.7 MW",
+    location: "Jhagadiya",
+    date: "December 2025",
+    description: "Reliable solar system for small-scale operations.",
+    image: agri_land3
+  },
+  {
+    title: "Vaishnvi Tex",
+    category: "ground-mounted",
+    capacity: "0.8 MW",
+    location: "Jhagadiya",
+    date: "December 2025",
+    description: "Industrial solar solution with optimized performance.",
+    image: agri_land3
+  },
+  {
+    title: "Devi Darshan Processors",
+    category: "ground-mounted",
+    capacity: "0.8 MW",
+    location: "Jhagadiya",
+    date: "December 2025",
+    description: "Sustainable solar setup for processing units.",
+    image: agri_land3
+  },
+  {
+    title: "Siddhi Vinayak Tex",
+    category: "ground-mounted",
+    capacity: "1.0 MW",
+    location: "Jhagadiya",
+    date: "December 2025",
+    description: "Efficient solar system designed for industrial load.",
+    image: agri_land3
+  },
+  {
+    title: "Banke Bihari Creation",
+    category: "ground-mounted",
+    capacity: "0.55 MW",
+    location: "Jhagadiya",
+    date: "December 2025",
+    description: "Cost-effective solar energy solution.",
+    image: agri_land3
+  },
+  {
+    title: "Shan Textile Pvt Ltd",
+    category: "ground-mounted",
+    capacity: "1.86 MW",
+    location: "Jhagadiya",
+    date: "February 2025",
+    description: "High-capacity solar plant for textile industry.",
+    image: agri_land3
+  },
+  {
+    title: "Maruti Metallic",
     category: "ground-mounted",
     capacity: "2 MW",
-    location: "Jhagadia, Bharuch",
-    date: "July 2025",
-    description: "Smart inverters provide voltage and frequency regulation for the local grid.",
+    location: "Jhagadiya",
+    date: "February 2025",
+    description: "Robust solar installation for heavy industrial usage.",
     image: agri_land3
   },
   {
-    title: "S R Metallizers",
+    title: "Sahajand Filament",
     category: "ground-mounted",
-    capacity: "2.3 MW",
-    location: "Jhagadia, Bharuch",
-    date: "July 2025",
-    description: "High-capacity industrial solar installation.",
+    capacity: "2 MW",
+    location: "Jhagadiya",
+    date: "February 2025",
+    description: "Efficient solar setup for manufacturing units.",
     image: agri_land3
   },
+  {
+    title: "Safron Jari Industries Pvt Ltd",
+    category: "ground-mounted",
+    capacity: "1.5 MW",
+    location: "Jhagadiya",
+    date: "February 2025",
+    description: "Industrial solar project ensuring energy savings.",
+    image: agri_land3
+  }
+];
 
-  ];
 
   const filteredProjects = filter === "all" 
     ? projects 
@@ -159,9 +204,9 @@ const Projects = () => {
                     alt={project.title}
                     className="w-full h-full object-cover group-hover:scale-110 transition-smooth"
                   />
-                  {/* <div className="absolute top-4 right-4 bg-secondary text-secondary-foreground px-3 py-1 rounded-full text-sm font-semibold">
+                  <div className="absolute top-4 right-4 bg-secondary text-secondary-foreground px-3 py-1 rounded-full text-sm font-semibold">
                     {project.capacity}
-                  </div> */}
+                  </div>
                 </div>
                 <CardContent className="p-6">
                   <div className="text-sm text-muted-foreground mb-2">
