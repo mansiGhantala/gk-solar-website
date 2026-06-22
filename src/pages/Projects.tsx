@@ -18,8 +18,9 @@ import yashJari from "@/assets/projectImage/yashjari.webp";
 import sRMetallizers from "@/assets/projectImage/SRMetallizers.webp";
 import shreeVasudev from "@/assets/projectImage/ShreeVasudev.webp";
 import deepknit from "@/assets/projectImage/Deepknit.webp";
-import vatsalya from "@/assets/projectImage/Vatsalya.webp";
+import vatashalya from "@/assets/projectImage/Vatashaly.webp";
 import vishwaprem from "@/assets/projectImage/Vishwaprem.webp";
+import sonalidyeing from "@/assets/projectImage/Sonalidyening.webp";
 const Projects = () => {
   const [filter, setFilter] = useState("all");
 
@@ -112,7 +113,7 @@ const projects = [
     location: "Asnad, Olpad",
     date: "June 2025",
     description: "Efficient solar system for textile processing unit.",
-    image: agri_land3
+    image: sonalidyeing
   },
   {
     title: "S S Sales",
@@ -139,7 +140,7 @@ const projects = [
     location: "Kukarmunda, Tapi",
     date: "August 2025",
     description: "Large-scale solar project for industrial energy needs.",
-    image: agri_land3
+    image: vatashalya
   }
 ];
 
